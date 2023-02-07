@@ -51,7 +51,7 @@ class ChessGame(Game):
             return 0
         else : 
             if result.winner is not None :
-                return result.winner
+                return 2*int(result.winner)-1
             else:
                 return 1e-3
     
